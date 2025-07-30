@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 //サイトに関する情報
-import { siteMeta } from 'lib/constants'
+import { siteMeta } from '../lib/constants'
 
 const { siteTitle, siteDesc, siteUrl, siteLocale, siteType, siteIcon } = siteMeta
 //汎用OGP画像
-import siteImg from 'images/ogp.jpg'
+import siteImg from '../images/ogp.jpg'
 export default function Meta ({ pageTitle, pageDesc,pageImg, pageImgW, pageImgH
 }){
     const title = pageTitle ? `${pageTitle} | ${siteTitle}` : siteTitle

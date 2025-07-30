@@ -1,9 +1,25 @@
 .wrapper {
     padding: var(--space-xl)0;
-    background-color:var(--gray-10);
+    background-color:var(--white);
+    height: 400px;
+    border-top: 1px solid --gray-50;
+    font-weight:200;
 }
 
 .flexContainer{
-    composes: sideBySideCenter from 'styles/utils.module.css';
+    composes: sideBySideCenter from '../styles/utils.module.css';
     gap: 2em;
+}
+
+.footerList{
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+    font-size:0.9em;
+    font-weight:200;
+}
+
+.footerList > * + *{
+    margin-left:120px;
 }
