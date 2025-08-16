@@ -28,7 +28,7 @@
 }
 .profileImg{
     width: 240px;
-    height: 418px;
+    height: 240px;
     object-fit: cover;
 }
 .contentAria{
@@ -51,5 +51,8 @@
 }
 .profileText {
     font-size: 1.1em;
-    color: #666;
+    color: #000;
+}
+.profileAria {
+    margin-top: 30px;
 }

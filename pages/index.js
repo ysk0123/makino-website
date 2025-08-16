@@ -13,7 +13,7 @@ import Shop from '../components/shop'
 import About from '../components/about'
 
 const notoSansJP = Noto_Sans_JP({
-  subsets: ["latin", "japanese"],
+  subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
   variable: "--font-noto-sans-jp",
 });

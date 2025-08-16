@@ -10,7 +10,7 @@ import {
   TwoColumnSidebar,
 } from "../components/two-column";
 import Image from "next/image";
-import profileImg from "../images/profile.jpg";
+import profileImg from "../images/about-240.jpg";
 import eyecatch from "../images/laceflower.jpg";
 
 export default function About() {
@@ -40,10 +40,12 @@ export default function About() {
                   height={523}
                   className={styles.profileImg}
                 />
+                <div className={styles.profileAria}>
                 <h2>MAKINO</h2>
                 <h2 className={styles.profileText}>
                   Artist / Illustrator / Designer
                 </h2>
+                </div>
               </div>
             </div>
             <div className={styles.aboutTextWrapper}>
@@ -73,69 +75,75 @@ export default function About() {
                 makes people happy.
               </p>
               <h3>[Exhibition]</h3>
-              <dl className="exhibition">
                 <h4>2025</h4>
                 <p>
-                  2025.01.14~20 シタディーンなんば大阪「Woman is in the flowers
+                  2025.01.14~20  シタディーンなんば大阪「Woman is in the flowers
                   -女は花に宿る-個展」
                 </p>
-                <h4>2023</h4>
-                <dt>2023.01.18~24</dt>
-                <dd>高槻阪急「今推しアーティストによるtriple（トリプル）個展Week103」</dd>
-                <h4>2022</h4>
-                <dt>2022.12.21~27</dt>
-                <dd>「アトリエの冬時間」ONE-L flowerとのコラボ展阪急うめだ本店10階セッセギャラリー</dd>
-                <dt>2022.07.07~07.16</dt>
-                <dd>GalleryIYN/ Creation Cafe IYN「Beautiful」企画展</dd>
-                <dt>2022.03.30~04.03</dt>
-                <dd>高槻阪急「人気アーティストによるtriple（トリプル）個展」</dd>
-                <h4>2021</h4>
-                <dt>2021.12.10~12</dt>
-                <dd>平和芸術展 ギャラリーくぼた本館</dd>
-                <dt>2021.12.08〜20</dt>
-                <dd>アパレルショップポスター展示 神戸阪急</dd>
-                <dt>2021.11.26~12.26</dt>
-                <dd>kahogosoap POPUPストア 東急ハンズ梅田店</dd>
-                <dt>2021.11.20~22</dt>
-                <dd>IYN Art Festival in 神戸阪急</dd>
-                <dt>2021.10</dt>
-                <dd>
-                  UNKNOWN ASIA 2021 FM802DJ <span>大抜卓人賞受賞</span>
-                </dd>
-                <dt>2021.9</dt>
-                <dd>
-                  展示会「雅〜白鶴が似合うあの人」 Gallery IYN
+                
+                <p>
+                  2023.01.18~24  高槻阪急「今推しアーティストによるtriple（トリプル）個展Week103」
+                </p>
+                <p>
+                  2022.12.21~27 「アトリエの冬時間」ONE-L flowerとのコラボ展阪急うめだ本店10階セッセギャラリー
+                </p>
+                <p>
+                  2022.07.07~07.16  GalleryIYN/ Creation Cafe IYN「Beautiful」企画展
+                </p>
+                <p>
+                  2022.03.30~04.03  高槻阪急「人気アーティストによるtriple（トリプル）個展」
+                </p>
+                <p>
+                2021.12.10~12  平和芸術展 ギャラリーくぼた本館
+                </p>
+                <p>
+                2021.12.08〜20  アパレルショップポスター展示 神戸阪急
+                </p>
+                <p>
+                2021.11.26~12.26  kahogosoap POPUPストア 東急ハンズ梅田店
+                </p>
+                <p>
+                2021.11.20~22  IYN Art Festival in 神戸阪急
+                </p>
+                <p>
+                2021.10  UNKNOWN ASIA 2021 FM802DJ <span>大抜卓人賞受賞</span>
+                </p>
+                <p>
+                2021.9  展示会「雅〜白鶴が似合うあの人」 Gallery IYN
                   <span>白鶴優秀賞受賞</span>
-                </dd>
-                <dt>2021.4</dt>
-                <dd>
-                  展示会「第3回文房堂アワード」文房堂ギャラリー
+                </p>
+                <p>
+                2021.4  展示会「第3回文房堂アワード」文房堂ギャラリー
                   <span>企業協賛賞「大額賞」受賞</span>
-                </dd>
-                <dt>2021.2</dt>
-                <dd>わたしとやさいとことば展</dd>
-                <dt>2021.2</dt>
-                <dd>展示会「SELECTED ILLUSTRATION BOYS」文房堂ギャラリー</dd>
-                <dt>2020</dt>
-                <dd>
-                  UNKNOWN ASIA ONLINE 2020
+                </p>
+                <p>
+                2021.2  わたしとやさいとことば展
+                </p>
+                <p>
+                2021.2  展示会「SELECTED ILLUSTRATION BOYS」文房堂ギャラリー
+                </p>
+                <p>
+                2020  UNKNOWN ASIA ONLINE 2020
                   <span>株式会社シュガー 上嶋和巳賞受賞</span>
-                </dd>
-                <dt>2021</dt>
-                <dd>個展「I Am A Woman」Gallery SPOON</dd>
-                <dt>2011</dt>
-                <dd>グループ展 "KISS"Gallery SPOON</dd>
-                <dt>2011</dt>
-                <dd>個展「FALL IN LOVE」大阪玉造MAGATAMAcafexdining</dd>
-                <dt>2011</dt>
-                <dd>グループ展「EpicureaRythm」大阪玉造MAGATAMAcafexdining</dd>
-                <dt>2011</dt>
-                <dd>
-                  グループ展「3rd 100 Artist Show theme”RED”」Ouchi Gallery(NY)
-                </dd>
-                <dt>2006</dt>
-                <dd>「御堂筋パレード」肖像画パフォーマンス</dd>
-              </dl>
+                </p>
+                <p>
+                2021  個展「I Am A Woman」Gallery SPOON
+                </p>
+                <p>
+                2011  グループ展 "KISS"Gallery SPOON
+                </p>
+                <p>
+                2011  個展「FALL IN LOVE」大阪玉造MAGATAMA cafe x dining
+                </p>
+                <p>
+                2011  グループ展「EpicureaRythm」大阪玉造MAGATAMA cafe x dining
+                </p>
+                <p>
+                  2011 グループ展「3rd 100 Artist Show theme”RED”」Ouchi Gallery(NY)
+                </p>
+                <p>
+                  2006 「御堂筋パレード」肖像画パフォーマンス
+                </p>
             </div>
           </PostBody>
         </TwoColumnMain>

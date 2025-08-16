@@ -1,6 +1,6 @@
-import { getAllCategories } from 'lib/api'
-import Container from 'components/container'
-import PostHeader from 'components/post-header'
+import { getAllCategories } from '../../../lib/api'
+import Container from '../../../components/container'
+import PostHeader from '../../../components/post-header'
 
 export default function Category({ name }) {
     return (
@@ -24,6 +24,9 @@ export async function getStaticProps(context){
     const allCats = await getAllCategories()
     const cat = allCats.find(({ slug }) => slug === catSlug)
 
+    if (!cat || !cat.name) {
+        return {notFound: true,}
+    }   
     return{
         props: {
             name: cat.name,

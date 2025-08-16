@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 
 //Google Font　設定
 const notoSansJP = Noto_Sans_JP({
-  subsets: ["latin", "japanese"],
+  subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
   variable: "--font-noto-sans-jp",
 });
@@ -31,7 +31,7 @@ config.autoAddCss = false
 // }
 function MyApp({ Component, pageProps }) {
     return (
-      <div className={{ Component, pageProps }}>
+      <div className={`${notoSansJP.variable} ${manrope.variable}`}>
       <Layout>
         <Component {...pageProps}/>
       </Layout>

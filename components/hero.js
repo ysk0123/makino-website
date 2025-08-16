@@ -4,7 +4,7 @@ import lookat from '../images/look.jpg'
 import { Noto_Sans_JP, Manrope } from "next/font/google";
 
 const notoSansJP = Noto_Sans_JP({
-    subsets:["latin", "japanese"],
+    subsets:["latin"],
     weight:["100", "300", "400", "500", "700", "900"],
     variable: "--font-noto-sans-jp",
 });
