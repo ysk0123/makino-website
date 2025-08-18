@@ -19,7 +19,7 @@ export default function News({ posts = [] }){
         <div className={styles.newsContainer}>
           {posts.slice(0, 4).map(({ title, slug, publishDate }) => (
             <dl className={styles.posts} key={slug}>
-              <dt className={styles.date}>{publishDate}</dt>
+              <dt className={styles.date}>{publishDate.slice(0,10)}</dt>
               <dd className={`${notoSansJP.className} ${manrope.className} ${styles.blog_title}`} style={{ fontWeight: 100 }}>
                 <Link href={`/blog/${slug}`}>
                   {title}
