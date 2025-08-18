@@ -4,7 +4,7 @@ export default function About() {
       <div className={styles.contentAria}>
         <div className={styles.textContents}>
         <h2 className={styles.title}>About</h2>
-          <a  href="http://localhost:3000/about" className={styles.link}>view more</a>
+          <a  href="/about" className={styles.link}>view more</a>
         </div>
       </div>
   );
