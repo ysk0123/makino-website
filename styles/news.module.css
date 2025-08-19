@@ -30,3 +30,18 @@
     font-size: 0.9em;
     font-weight: 200;
 }
+
+/* ------------------
+mobile 
+---------------------*/
+
+@media screen
+    and (max-width: 900px) {
+        .posts {
+            width: 100%;
+        }
+        .newsContainer {
+            right: 0;
+            margin: 0;
+        }
+}
