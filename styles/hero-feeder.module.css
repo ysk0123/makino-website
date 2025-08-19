@@ -29,3 +29,18 @@
 .splideContainer :global(.splide__slide.is-active) .splideImg {
     transform: scale(1.1);
 }
+
+/* ------------------
+mobile 
+---------------------*/
+
+@media screen
+    and (max-width: 900px) {
+        .splideContainer{
+      display: none;
+        }
+        .splideImg{
+            width: 100%;
+            height: 500px;      
+        } 
+}
