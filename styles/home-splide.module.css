@@ -26,3 +26,18 @@
   display: flex;
   justify-content: left;
 }
+
+/* ------------------
+mobile 
+---------------------*/
+
+ @media screen
+    and (max-width: 900px) {
+        .splideTitle{
+            padding-left:0;
+        }
+        .newsContainer {
+            right: 0;
+            margin: 0;
+        }
+} 
