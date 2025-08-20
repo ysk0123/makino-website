@@ -1,6 +1,6 @@
 import { getAllPosts } from '../lib/api'
 import Container from '../components/container'
-import Hero from '../components/hero'
+// import Hero from '../components/hero'
 import Posts from '../components/posts'
 import Pagination from '../components/pagination'
 import News from '../components/news'
@@ -39,9 +39,7 @@ export default function Home({ posts }){
           <div style={{ margin: "2em 0" }}>
             <a href="/blog" className={`${notoSansJP.className} ${manrope.className}`}>view more</a>
           </div>
-          {/* <div style={{ marginBottom: "400px" }}></div> */}
           </Container>
-          {/* <h2 className={`${notoSansJP.className} ${manrope.className}`} style={{ fontWeight: 100, fontSize:"2.25rem",marginTop:"650px",marginLeft:"9%"}}>Gallery</h2> */}
           <HomeSplide height="800px"/>
           <Container>
             <Shop />
