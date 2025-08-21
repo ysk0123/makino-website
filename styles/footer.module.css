@@ -21,5 +21,14 @@
 }
 
 .footerList > * + *{
-    margin-left:120px;
+    margin-left:3em;
 }
+/*
+ mobile
+ */
+
+/* @media screen and (max-width: 900px) {
+    .wrapper{
+        max-width: 70%;
+    }
+    }  */

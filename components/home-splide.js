@@ -29,6 +29,12 @@ export default function HomeSplide({ height = "400px" }) {
                 // rewind: true,
                 autoStart: true,
               },
+               breakpoints: {
+                  900: {
+                    autoplay: false, 
+                    drag: true,
+              },
+            },
             }}
             extensions={{ AutoScroll }}
             aria-label="Auto Scroll Splide Example"
