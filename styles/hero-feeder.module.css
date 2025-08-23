@@ -36,12 +36,20 @@ mobile
 ---------------------*/
 
 @media screen and (max-width: 900px) {
-        .splideContainer{
-      display: none;
-      height: 0;
-      margin: 0;
-      padding: 0;
-        }
+  .splideContainer{
+    display: none;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    }
+    .mobileImg{
+        width: 100%;
+        height: auto;
+        object-fit: cover; 
+        object-position: center;
+        transform: scale(1);
+        transition: opacity 4.0s ease-in-out, transform 4.0s linear;
+    }
         /* .splideImg{
             width: 100%;
             height: auto;
