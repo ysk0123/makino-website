@@ -27,8 +27,9 @@
  mobile
  */
 
-/* @media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .wrapper{
-        max-width: 70%;
+        height: auto;
+        padding: var(--space-m) 0;
     }
-    }  */
+    } 
