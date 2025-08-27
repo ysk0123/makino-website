@@ -1,10 +1,22 @@
 .list{
     display: flex;
-    gap: 2em;
+    gap: 3em;
     font-size: 1em;
-    font-weight:700;
+    font-weight:100;
 }
 
 .list a:hover {
     color: var(--accent)
+}
+
+.btn{
+    display:none;
+}
+@media screen and (max-width: 900px) {
+    .list{
+        display:none;
+    }
+    .btn{
+        display:contents;
+    }
 }
