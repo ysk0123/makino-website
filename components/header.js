@@ -9,7 +9,7 @@ export default function Header() {
       <header className={styles.header}>
       <Container large>
         <div className={styles.flexContainer}>
-          <Logo boxOn />
+          <Logo />
           <Nav />
         </div>
       </Container>

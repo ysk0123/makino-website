@@ -1,12 +1,7 @@
-.basic {
-    font-size: var(--heading2);
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    }
-
 .box{
     composes: basic;
-    display: inline-block;
+    display: block;
+    width:100%;
     
 }
 
@@ -17,7 +12,14 @@
 }
 
 @media screen and (max-width: 900px) {
+    .logoLink{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
     .logoImage {
+        display:block;
         max-width: 70%;
         height: auto;
     }

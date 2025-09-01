@@ -23,24 +23,7 @@ export default function Posts({ posts }) {
             {posts.map(({ title, slug, publishDate }) => (
              <article className={styles.post} key={slug}>
                 <Link href={`/blog/${slug}`}>
-               {/* eyecatch画像は非表示にする */}
-                {/* <figure>
-                    <Image
-                        src={eyecatch.url}
-                        alt=""
-                        width={eyecatch.width}
-                        height={eyecatch.height}
-                        sizes="(min-width: 1152px) 576px, 50vw"
-                        placeholder={isExternalUrl(eyecatch.url) ? undefined : "blur"}
-                        blurDataURL={eyecatch.blurDataURL}
-                        style={{
-                            width: '100%',
-                            height: 'auto',
-                        }}
-                        />
-                </figure> */}
                 {/* //ブログのタイトルのみ表示 */}
-
                   <span className={styles.publishDate}>{publishDate ? publishDate.slice(0, 10) : ''}</span>
                 <h2 className={`${notoSansJP.className} ${manrope.className} ${styles.title}`}>
                   {title}
