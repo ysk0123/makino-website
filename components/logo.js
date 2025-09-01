@@ -10,8 +10,8 @@ export default function Logo(){
                 src="/logo_black.png" 
                 alt="MAKINO Web Logo" 
                 priority
-                width={150}
-                height={50} 
+                width={200}
+                height={80} 
                 className={styles.logoImage}
                 />
         </Link>
