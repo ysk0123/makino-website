@@ -51,5 +51,6 @@ mobile
     }
     .title{
         padding-left:16px;
+        white-space: nowrap;
     }
 }
