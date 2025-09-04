@@ -18,15 +18,12 @@ export default function HomeSplide({ height = "400px" }) {
               type: "loop",
               perPage: 4,
               perMove: 1,
-              // autoplay: true,
               pagination: false,
               arrows: false,
-              // gap: '0.8rem',
               autoScroll: {
                 speed: 1.1,
                 pauseOnHover: false,
                 pauseOnFocus: false,
-                // rewind: true,
                 autoStart: true,
               },
                breakpoints: {

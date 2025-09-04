@@ -27,6 +27,7 @@
 }
     /*　基本設定　*/
     body {
+        overflow: hidden;
         color: var(--black);
         font-family: "Noto Sans JP", "Manrope", sans-serif;
         font-size: var(--body);
