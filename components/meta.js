@@ -36,6 +36,7 @@ export default function Meta ({ pageTitle, pageDesc,pageImg, pageImgW, pageImgH
             <meta property="og:image" content={imgUrl} />
             <meta property="og:image:width" content={imgW} />
             <meta property="og:image:height" content={imgH} />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             <meta name="twitter:card" content="summary_large_image" />
         </Head>
     )
