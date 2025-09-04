@@ -43,7 +43,7 @@ export default function Post ({
                     alt=""
                     width={eyecatch.width}
                     height={eyecatch.height}
-                    sizes="(min-width: 1152px) 1152px, 100vw"
+                    sizes="(min-width: 1152px) 1152px,100%"
                     priority
                     placeholder={isExternalUrl(eyecatch.url) ? undefined : "blur"}
                     blurDataURL={eyecatch.blurDataURL}

@@ -22,7 +22,7 @@ export default function Hero({ className, title, subtitle, imageOn = false }){
                   <Image 
                     src={lookat} 
                     alt="" 
-                    sizes="(min-width: 1152px) 576px, (min-width: 768px) 50vw, 100vw"
+                    sizes="(min-width: 1152px) 576px, (min-width: 768px) 50vw, 100%"
                     priority
                     fill
                     placeholder="blur"

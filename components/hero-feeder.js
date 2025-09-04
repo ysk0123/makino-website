@@ -3,7 +3,7 @@ import styles from "../styles/hero-feeder.module.css";
 import '@splidejs/splide/dist/css/splide.min.css';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 
-export default function HeroFeeder({ width = "100vw", height = "100vh" }){
+export default function HeroFeeder({ width = "100%", height = "100vh" }){
     const [isMobile,setIsMobile] = useState(false);
 //画面幅９００px以下でfeederを停止
 //_
