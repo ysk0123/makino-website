@@ -36,11 +36,8 @@ export default function Home({ posts }){
         <HeroFeeder/>
         <Container>
         <News posts={posts}  />
-          <div style={{ margin: "2em 0" }}>
-            <a href="/blog" className={`${notoSansJP.className} ${manrope.className}`}>view more</a>
-          </div>
           </Container>
-          <HomeSplide height="800px"/>
+          <HomeSplide />
           <Container>
             <Shop />
           <About />

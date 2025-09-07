@@ -26,12 +26,9 @@ export default function HomeSplide({ height = "400px" }) {
                 pauseOnFocus: false,
                 autoStart: true,
               },
-               breakpoints: {
-                  900: {
-                    autoplay: false, 
-                    drag: true,
+              breakpoints: {
+                900: {},
               },
-            },
             }}
             extensions={{ AutoScroll }}
             aria-label="Auto Scroll Splide Example"
@@ -41,7 +38,6 @@ export default function HomeSplide({ height = "400px" }) {
                 className={styles.splideImg}
                 src="/blueflower.jpg"
                 alt="青い花の写真"
-                style={{ height: height }}
               />
             </SplideSlide>
             <SplideSlide>
@@ -49,7 +45,6 @@ export default function HomeSplide({ height = "400px" }) {
                 className={styles.splideImg}
                 src="/colordropsdress.jpg"
                 alt="カラフルなドレス写真"
-                style={{ height: height }}
               />
             </SplideSlide>
             <SplideSlide>
@@ -57,7 +52,6 @@ export default function HomeSplide({ height = "400px" }) {
                 className={styles.splideImg}
                 src="/colorfullife.jpg"
                 alt="カラフルな生活写真"
-                style={{ height: height }}
               />
             </SplideSlide>
             <SplideSlide>
@@ -65,7 +59,6 @@ export default function HomeSplide({ height = "400px" }) {
                 className={styles.splideImg}
                 src="/flowerhair01.jpg"
                 alt="花の髪飾り写真"
-                style={{ height: height }}
               />
             </SplideSlide>
             <SplideSlide>
@@ -73,7 +66,6 @@ export default function HomeSplide({ height = "400px" }) {
                 className={styles.splideImg}
                 src="/music.jpg"
                 alt="音楽の写真"
-                style={{ height: height }}
               />
             </SplideSlide>
             <SplideSlide>
@@ -81,7 +73,6 @@ export default function HomeSplide({ height = "400px" }) {
                 className={styles.splideImg}
                 src="/drops01.jpg"
                 alt="水滴の写真"
-                style={{ height: height }}
               />
             </SplideSlide>
             <SplideSlide>
@@ -89,7 +80,6 @@ export default function HomeSplide({ height = "400px" }) {
                 className={styles.splideImg}
                 src="/yellowgirl.jpg"
                 alt="黄色い服の女性写真"
-                style={{ height: height }}
               />
             </SplideSlide>
           </Splide>

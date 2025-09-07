@@ -1,52 +1,62 @@
 .title {
     margin-top: 120px;
-    font-size:2.5em;
+    margin-left: 8%;
+    font-size: 2.5em;
 }
-.newsContainer{
-    /* position: absolute; */
-    right:3%;
-    margin: 00px;
-} 
 
-.heading{
-    display:inline-block;
+.newsContainer {
+    width: 100%;
+}
+
+.heading {
+    display: inline-block;
     font-size: 2.5em;
     font-style: italic;
     text-align: left;
 
 }
-.posts{
-    width: 57vw;
-    height:80px;
+
+.posts {
+    width: 65vw;
+    height: 80px;
+    padding-left: 8%;
     display: flex;
     align-items: center;
-    border-bottom:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     text-align: left;
 }
-.date{
+
+.date {
     font-size: 0.8em;
 }
-.blog_title{
+
+.blog_title {
     font-size: 0.9em;
     font-weight: 200;
+}
+
+.link a {
+    margin-left: 8%;
 }
 
 /* ------------------
 mobile 
 ---------------------*/
 
-@media screen
-    and (max-width: 900px) {
-        .posts {
-            width: 100%;
-        }
-        .newsContainer {
-            right: 0;
-            margin: 0;
-        }
-        .title{
-            margin-top: 20px;
-            font-size: 2em;
+@media screen and (max-width: 900px) {
+    .posts {
+        width: 100%;
+    }
 
-        }
+    .newsContainer {
+        right: 0;
+        margin: 0;
+    }
+
+    .title {
+        margin-top: 20px;
+        margin-left: 8%;
+        font-size: 2.5em;
+
+    }
 }
