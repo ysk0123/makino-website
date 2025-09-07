@@ -4,8 +4,8 @@ export default function Shop() {
     return (
       <div className={styles.contentAria}>
         <div className={styles.textContents}>
-          <a  className ={styles.link} href="https://makinoart.theshop.jp/">
         <h2 className={styles.title}>Shop</h2>
+          <a  className ={styles.link} href="https://makinoart.theshop.jp/">
           view more
           </a>
         </div>
