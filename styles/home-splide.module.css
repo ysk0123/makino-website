@@ -4,13 +4,13 @@
   /* margin-top: 600px; */
 }
 .splideWrapper{
-  max-width: 1680px;
+  max-width: 1400px;
   height: auto;
   /* margin: 0 auto; */
 
 }
 .splideTitle {
-  width:1400px;
+  width:1200px;
   font-size: 2.5em;
   font-weight: 100;
   text-align: left;
@@ -45,7 +45,9 @@ mobile
       }
  
       .splideTitle{
-            margin-left:8%;
+        width: 100%;    
+        margin-left:8%;
+
         }
         .newsContainer {
             right: 0;

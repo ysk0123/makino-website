@@ -1,7 +1,7 @@
 .wrapper {
-    padding: var(--space-xl)0;
+    padding: 50px 5%;
     background-color:var(--white);
-    height: 400px;
+    height: 600px;
     border-top: 1px solid --gray-50;
     font-weight:200;
 }
@@ -29,7 +29,8 @@
 
 @media screen and (max-width: 900px) {
     .wrapper{
-        height: auto;
+        height: 240px;;
         padding: var(--space-m) 0;
+
     }
     } 
