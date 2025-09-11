@@ -12,6 +12,8 @@ const manrope = Manrope({
   weight: ["200", "400", "500", "600", "700"],
   variable: "--font-manrope",
 });
+
+//　要リファクタリング
 export default function News({ posts = [] }) {
   return (
     <>
