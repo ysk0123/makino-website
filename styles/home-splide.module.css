@@ -10,7 +10,7 @@
 
 }
 .splideTitle {
-  width:1200px;
+  max-width:100%;
   font-size: 2.5em;
   font-weight: 100;
   text-align: left;
@@ -45,7 +45,7 @@ mobile
       }
  
       .splideTitle{
-        width: 100%;    
+        max-width: 100%;    
         margin-left:8%;
 
         }
