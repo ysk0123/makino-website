@@ -1,7 +1,7 @@
 .wrapper {
     padding: 50px 5%;
     background-color:var(--white);
-    height: 600px;
+    height:200px;
     border-top: 1px solid --gray-50;
     font-weight:200;
 }
