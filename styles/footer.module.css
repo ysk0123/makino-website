@@ -29,8 +29,7 @@
 
 @media screen and (max-width: 900px) {
     .wrapper{
-        height: 240px;;
-        padding: var(--space-m) 0;
-
+        height: 240px;
+        padding: 30px 3%;
     }
     } 
