@@ -13,27 +13,30 @@ export default function HomeSplide({ height = "400px" }) {
       >
         <a href="/gallery" className={styles.viewMoreLink}>
           <Splide
-            style={{ height: height }}
-            options={{
+                style={{ height: height }}
+              options={{
               type: "loop",
               perPage: 4,
+              
               perMove: 1,
               pagination: false,
               arrows: false,
               autoScroll: {
-                speed: 1.1,
+                speed:1.2,
                 pauseOnHover: false,
                 pauseOnFocus: false,
                 autoStart: true,
               },
               breakpoints: {
-                900: {},
+                900: {
+                  speed: 0.8,
+                },
               },
             }}
             extensions={{ AutoScroll }}
             aria-label="Auto Scroll Splide Example"
           >
-            <SplideSlide>
+            <SplideSlide> 
               <img
                 className={styles.splideImg}
                 src="/blueflower.jpg"
