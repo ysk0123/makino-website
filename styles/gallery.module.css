@@ -1,11 +1,25 @@
 .gallery {
+    /* max-width: 1400px; */
+    width: 100%;
     margin: 0 auto;
     margin-top:150px;
 }
 .galleryGrid{
     margin-top:50px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap:6px;
+        grid-template-columns: repeat(4, 1fr);
+    gap:4px;
     /* margin-top: 8px; */
+}
+
+@media (max-width: 1024px) {
+    .galleryGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .galleryGrid {
+        grid-template-columns: 1fr;
+    }
 }

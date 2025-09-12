@@ -47,7 +47,6 @@ export default function Gallery({ posts }) {
                     style={{ width: 300, height: 200, background: "#ccc" }}
                   />
                 )}
-                {/* <h2>{post.title}</h2> */}
               </div>
             ))}
           </div>
