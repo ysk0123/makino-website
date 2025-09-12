@@ -1,54 +1,47 @@
-import  { useState } from 'react'
-import Link from 'next/link'
-import styles from '../styles/nav.module.css'
+import { useState } from "react";
+import Link from "next/link";
+import styles from "../styles/nav.module.css";
 import { Noto_Sans_JP, Manrope } from "next/font/google";
 
-
 const notoSansJP = Noto_Sans_JP({
-	subsets: ["latin"],
-	weight: ["100", "300", "400", "500", "700", "900"],
-	variable: "--font-noto-sans-jp",
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+  variable: "--font-noto-sans-jp",
 });
 const manrope = Manrope({
-	subsets: ["latin"],
-	weight: ["200", "400", "500", "600", "700"],
-	variable: "--font-manrope",
+  subsets: ["latin"],
+  weight: ["200", "400", "500", "600", "700"],
+  variable: "--font-manrope",
 });
-export default function Nav(){
-		const [navIsOpen, setNavIsOpen] = useState(false)
-		const toggleNav = () =>{
-			setNavIsOpen((prev) => !prev)
-		}
-	return(
-		<nav className = {navIsOpen ? styles.open : styles.close}>
-			<button className={styles.btn} onClick={toggleNav}>menu</button>
-			<ul className={`${notoSansJP.className} ${manrope.className} ${styles.list}`}>
-				<li>
-					<Link href="/">
-						Top
-					</Link>
-				</li>
-				<li>
-				<Link href="/blog">
-					News
-					</Link>
-				</li>
-				<li>
-					<Link href="/gallery">
-					Gallery
-					</Link>
-				</li>
-				<li>
-					<Link href="https://makinoart.theshop.jp/">
-					Shop
-					</Link>
-				</li>
-				<li>
-					<Link href="/about">
-					About
-					</Link>
-				</li>
-			</ul>
-		</nav> 
-	)
+export default function Nav() {
+  const [navIsOpen, setNavIsOpen] = useState(false);
+  const toggleNav = () => {
+    setNavIsOpen((prev) => !prev);
+  };
+  return (
+    <nav className={navIsOpen ? styles.open : styles.close}>
+      <button className={styles.btn} onClick={toggleNav}>
+        menu
+      </button>
+      <ul
+        className={`${notoSansJP.className} ${manrope.className} ${styles.list}`}
+      >
+        <li>
+          <Link href="/">Top</Link>
+        </li>
+        <li>
+          <Link href="/blog">News</Link>
+        </li>
+        <li>
+          <Link href="/gallery">Gallery</Link>
+        </li>
+        <li>
+          <Link href="https://makinoart.theshop.jp/">Shop</Link>
+        </li>
+        <li>
+          <Link href="/about">About</Link>
+        </li>
+      </ul>
+    </nav>
+  );
 }
