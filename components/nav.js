@@ -20,8 +20,19 @@ export default function Nav() {
   };
   return (
     <nav className={navIsOpen ? styles.open : styles.close}>
+      {navIsOpen && (
+        <style jsx global>{`
+          @media screen and (max-width: 900px) {
+            body {
+              overflow: hidden;
+              position: fixed;
+              width: 100%;
+            }
+          }
+        `}</style>
+      )}
       <button className={styles.btn} onClick={toggleNav}>
-        menu
+        <span className={styles.bar}></span>
       </button>
       <ul
         className={`${notoSansJP.className} ${manrope.className} ${styles.list}`}
