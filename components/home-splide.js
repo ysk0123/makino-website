@@ -2,11 +2,13 @@ import styles from "../styles/home-splide.module.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/splide/dist/css/splide.min.css";
+import Image from 'next/image';
 
 export default function HomeSplide({ height = "400px" }) {
   return (
     <>
       <h2 className={styles.splideTitle}>Gallery</h2>
+
       <div
         className={styles.splideWrapper}
         style={{ "--splide-height": height }}
@@ -17,7 +19,6 @@ export default function HomeSplide({ height = "400px" }) {
               options={{
               type: "loop",
               perPage: 4,
-              
               perMove: 1,
               pagination: false,
               arrows: false,
@@ -29,13 +30,14 @@ export default function HomeSplide({ height = "400px" }) {
               },
               breakpoints: {
                 900: {
-                  speed: 0.8,
+                  destroy: true,
                 },
               },
             }}
             extensions={{ AutoScroll }}
             aria-label="Auto Scroll Splide Example"
           >
+
             <SplideSlide> 
               <img
                 className={styles.splideImg}

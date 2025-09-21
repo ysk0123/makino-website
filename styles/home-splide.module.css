@@ -1,8 +1,3 @@
-/* .splide__slide{
-  margin: 0;
-  padding: 0;
-} */
-
 .splide {
   will-change: transform;
   transform: translateZ(0);
@@ -37,20 +32,27 @@
   justify-content: left;
 }
 
+.mobileOnly{
+  display: none;
+}
 /* ------------------
 mobile 
 ---------------------*/
 
 @media screen and (max-width: 900px) {
 
-  .splideWrapper {
-    height: 300px;
-
+  .splideWrapper{
+    width:100%;
+    height: 800px;
+    background-image: url('../images/laceflower.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 5% 20%;
   }
 
   .splideTitle {
     max-width: 100%;
-    margin-left: 8%;
+    margin-right: 8%;
 
   }
 
@@ -65,5 +67,15 @@ mobile
     object-fit: contain;
     display: block;
     margin-top: 24px;
+  }
+  :global(.splide__slide){
+    display:none;
+  }
+  .mobileOnly{
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }
