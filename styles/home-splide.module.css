@@ -68,7 +68,7 @@ mobile
     display: block;
     margin-top: 24px;
   }
-  :global(.splide__slide){
+  .splideWrapper :global(.splide__slide){
     display:none;
   }
   .mobileOnly{
