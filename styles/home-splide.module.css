@@ -14,9 +14,12 @@
   font-size: 2.5em;
   font-weight: 100;
   text-align: left;
-  /* margin-top: 100px; */
+  margin-top: 100px;
   padding-left: 8%;
+}
 
+.link{
+  display:none;
 }
 
 .splideImg {
@@ -51,10 +54,37 @@ mobile
   }
 
   .splideTitle {
-    max-width: 100%;
-    margin-right: 8%;
+    /* max-width: 100%; */
+    margin-right: 0;
 
   }
+
+  .textContants{
+    display: flex;
+    flex-direction: column;
+    width:  35%;
+
+
+    /* justify-content: right; */
+    /* align-items: right; */
+    /* max-width: 100%; */
+    /* margin: 0 auto; */
+    /* padding-left: 70%; */
+    padding: 200px 8% 0 0;
+    margin-left: auto;
+    /* margin-top: 200px; */
+
+  }
+  .link{
+  display: inline-block;
+  text-align: right;
+  margin-top: 24px;
+  white-space: nowrap;
+  font-size: 1em;
+  font-weight: 100;
+  border-bottom: 0.5px solid #000000; 
+  }
+
 
   .newsContainer {
     right: 0;
