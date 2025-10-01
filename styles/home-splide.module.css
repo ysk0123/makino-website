@@ -49,8 +49,8 @@ mobile
     height: 800px;
     background-image: url('../images/laceflower.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 5% 20%;
+    background-position: -120px 40%;
+    background-size: cover;
   }
 
   .splideTitle {
