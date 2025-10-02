@@ -15,9 +15,15 @@ const manrope = Manrope({
 });
 export default function Nav() {
   const [navIsOpen, setNavIsOpen] = useState(false);
+  
   const toggleNav = () => {
     setNavIsOpen((prev) => !prev);
   };
+
+  const closeNav = () => {
+    setNavIsOpen(false);
+  };
+
   return (
     <nav className={navIsOpen ? styles.open : styles.close}>
       {navIsOpen && (
@@ -38,19 +44,19 @@ export default function Nav() {
         className={`${notoSansJP.className} ${manrope.className} ${styles.list}`}
       >
         <li>
-          <Link href="/">Top</Link>
+          <Link href="/" onClick={closeNav}>Top</Link>
         </li>
         <li>
-          <Link href="/blog">News</Link>
+          <Link href="/blog" onClick={closeNav}>News</Link>
         </li>
         <li>
-          <Link href="/gallery">Gallery</Link>
+          <Link href="/gallery" onClick={closeNav}>Gallery</Link>
         </li>
         <li>
-          <Link href="https://makinoart.theshop.jp/">Shop</Link>
+          <Link href="https://makinoart.theshop.jp/" onClick={closeNav}>Shop</Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <Link href="/about" onClick={closeNav}>About</Link>
         </li>
       </ul>
     </nav>
