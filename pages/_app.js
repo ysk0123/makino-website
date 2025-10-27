@@ -19,16 +19,6 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
 config.autoAddCss = false
 
-
-// export default function RootLayout({ children }) {
-//   return (
-//     <html lang="ja" className={`${notoSansJP.variable} ${manrope.variable}`}> 
-//       <body className={`${notoSansJP.className} ${manrope.className}`}> 
-//         {children}
-//       </body>
-//     </html>
-//   )
-// }
 function MyApp({ Component, pageProps }) {
     return (
       <div className={`${notoSansJP.variable} ${manrope.variable}`}>

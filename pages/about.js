@@ -24,13 +24,10 @@ export default function About() {
         pageImgW={eyecatch.width}
         pageImgH={eyecatch.height}
       />
-      {/* <Hero className={styles.heroCustom} title="About" /> */}
-
       <TwoColumn>
-        <TwoColumnMain>
+        <TwoColumnMain className={styles.main}>
           <PostBody>
             <h1 className={styles.title}>About</h1>
-            {/* <div className={styles.profileWrapper}></div> */}
             <div className={styles.aboutDesc}>
               <div className={styles.profile}>
                 <img
@@ -49,31 +46,34 @@ export default function About() {
               </div>
             </div>
             <div className={styles.aboutTextWrapper}>
-              <p className={styles.aboutDescText}>
-                日本のアパレル企業でファッションデザイナーを経験したのち、ニューヨークへ渡米。現地で活躍するグラフィティアーティストと共に、メッシュキャップブランド「SPREGIRL」を立ち上げる。
-                帰国後、米国人壁画家Hugue Roger
-                Matheiu氏に師事し、アカデミーアートの基礎を学ぶ。 Masa Mode
-                Academy研究科、CYD卒業。
-                私のバックグラウンドにはファッション、モード、グラフィティがあります。
-                そこへ、Hugue Roger
-                Matheiu氏から受け継いだアカデミックな芸術を取り入れて、作品を制作しています。
-                女性や自然、花をモチーフに、テーマはエレガンス、モード、ラグジュアス、ナチュラル。鉛筆でディティールや繊細さを表現する一方、日本の伝統的な墨や筆を使って大胆なストロークを描いたり、水彩の滲みを自然に委ねて生みだす。そんな相反するものを組み合わせて、一つの作品としてまとめています。
-                「観る」だけではなく、「感じる」ことのできるアート、観たときにときめくアート、衝撃を受けるアート、人を幸せにするアートを目指しています。
-              </p>
-              <p className={styles.aboutDescText}>
+              <div className={styles.aboutDescText}>
+                <p>日本のアパレル企業でファッションデザイナーを経験したのち、ニューヨークへ渡米。</p>
+                <p>現地で活躍するグラフィティアーティストと共に、メッシュキャップブランド「SPREGIRL」を立ち上げる。</p>
+                <p>帰国後、米国人壁画家Hugue RogerMatheiu氏に師事し、アカデミーアートの基礎を学ぶ。</p>
+                <p>Masa ModeAcademy研究科、CYD卒業。</p>
+                <p>私のバックグラウンドにはファッション、モード、グラフィティがあります。</p>
+                <p>そこへ、Hugue RogerMatheiu氏から受け継いだアカデミックな芸術を取り入れて、作品を制作しています。</p>
+                <p>女性や自然、花をモチーフに、テーマはエレガンス、モード、ラグジュアス、ナチュラル。</p>
+                <p>鉛筆でディティールや繊細さを表現する一方、日本の伝統的な墨や筆を使って大胆なストロークを描いたり、</p>
+                <p>水彩の滲みを自然に委ねて生みだす。</p>
+                <p>そんな相反するものを組み合わせて、一つの作品としてまとめています。</p>
+                <p>「観る」だけではなく、「感じる」ことのできるアート、観たときにときめくアート、衝撃を受けるアート、</p>
+                <p>人を幸せにするアートを目指しています。</p>
+              </div>
+              <div className={styles.aboutDescText}>
                 My background is in graphic arts:painting,drawing,design,and
-                fashion illustration. I studied academic art and was mentored by
-                the artist Hugue Roger Matheiu. I combine fashion illustration
-                with the academic art to create my work. I use women, nature and
-                flowers as motifs, the themes are elegance, mode, luxury and
-                natural. I use pencil to express detail, while I use traditional
-                Japanese calligraphy ink and brushes to create bold strokes and
-                watercolor blotches, letting nature take its course. I combine
-                such contradictions and bring them together in my art work. I
-                love creating art that not only “looks” but also “feels”, art
-                that excites and impacts you when you look it, and art that
-                makes people happy.
-              </p>
+                fashion illustration.
+                I studied academic art and was mentored by the artist Hugue Roger Matheiu.
+                I combine fashion illustration with the academic art to create my work.
+                I use women, nature and flowers as motifs, the themes are elegance, mode, luxury and natural.
+                I use pencil to express detail, 
+                while I use traditional Japanese calligraphy ink and brushes to create bold strokes
+                and watercolor blotches, letting nature take its course.
+                I combine such contradictions and bring them together in my art work.
+                I love creating art that not only “looks” but also “feels”,
+                art that excites and impacts you when you look it,
+                and art that makes people happy.
+              </div>
               <h3>[Exhibition]</h3>
                 <h4>2025</h4>
                 <p>
