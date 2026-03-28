@@ -7,6 +7,8 @@ export default function HeroFeeder({ width = "100%", height = "100vh" }){
     const [isMobile,setIsMobile] = useState(false);
 //画面幅９００px以下でfeederを停止
 //_
+
+
     useEffect(() => {
         const checkWidth = () => {
             setIsMobile(window.innerWidth <= 900);
