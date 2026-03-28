@@ -1,4 +1,4 @@
-import styles from '../styles/globals.css'
+import '../styles/globals.css'
 import { Noto_Sans_JP, Manrope } from "next/font/google";
 import Layout from '../components/layout'
 
