@@ -61,18 +61,18 @@ export default function About() {
                 <p>人を幸せにするアートを目指しています。</p>
               </div>
               <div className={styles.aboutDescText}>
-                My background is in graphic arts:painting,drawing,design,and
-                fashion illustration.
-                I studied academic art and was mentored by the artist Hugue Roger Matheiu.
-                I combine fashion illustration with the academic art to create my work.
-                I use women, nature and flowers as motifs, the themes are elegance, mode, luxury and natural.
-                I use pencil to express detail, 
+                <p>My background is in graphic arts:painting,drawing,design,and
+                fashion illustration.</p>
+                <p>I studied academic art and was mentored by the artist Hugue Roger Matheiu.</p>
+                <p>I combine fashion illustration with the academic art to create my work.</p>
+                <p>I use women, nature and flowers as motifs, the themes are elegance, mode, luxury and natural.</p>
+                <p>I use pencil to express detail, 
                 while I use traditional Japanese calligraphy ink and brushes to create bold strokes
-                and watercolor blotches, letting nature take its course.
-                I combine such contradictions and bring them together in my art work.
-                I love creating art that not only “looks” but also “feels”,
+                and watercolor blotches, letting nature take its course.</p>
+                <p>I combine such contradictions and bring them together in my art work.</p>
+                <p>I love creating art that not only “looks” but also “feels”,
                 art that excites and impacts you when you look it,
-                and art that makes people happy.
+                and art that makes people happy.</p>
               </div>
               <h3>[Exhibition]</h3>
                 <h4>2025</h4>
