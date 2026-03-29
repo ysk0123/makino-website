@@ -43,52 +43,69 @@ export default function HomeSplide({ height = "400px" }) {
             aria-label="Auto Scroll Splide Example"
           >
             <SplideSlide>
-              <img
+              <Image
                 className={styles.splideImg}
                 src="/blueflower.jpg"
                 alt="青い花の写真"
+                width={400}
+                height={300}
+                priority
               />
             </SplideSlide>
             <SplideSlide>
-              <img
+              <Image
                 className={styles.splideImg}
                 src="/colordropsdress.jpg"
                 alt="カラフルなドレス写真"
+                width={400}
+                height={300}
+
               />
             </SplideSlide>
             <SplideSlide>
-              <img
+              <Image
                 className={styles.splideImg}
                 src="/colorfullife.jpg"
                 alt="カラフルな生活写真"
+                width={400}
+                height={300}
               />
             </SplideSlide>
+
             <SplideSlide>
-              <img
+              <Image
                 className={styles.splideImg}
                 src="/flowerhair01.jpg"
                 alt="花の髪飾り写真"
+                width={400}
+                height={300}
               />
             </SplideSlide>
             <SplideSlide>
-              <img
+              <Image
                 className={styles.splideImg}
                 src="/music.jpg"
                 alt="音楽の写真"
+                width={400}
+                height={300}
               />
             </SplideSlide>
             <SplideSlide>
-              <img
+              <Image
                 className={styles.splideImg}
                 src="/drops01.jpg"
                 alt="水滴の写真"
+                width={400}
+                height={300}
               />
             </SplideSlide>
             <SplideSlide>
-              <img
+              <Image
                 className={styles.splideImg}
                 src="/yellowgirl.jpg"
                 alt="黄色い服の女性写真"
+                width={400}
+                height={300}
               />
             </SplideSlide>
           </Splide>

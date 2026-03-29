@@ -2,12 +2,10 @@ import { useEffect, useState } from "react";
 import styles from "../styles/hero-feeder.module.css";
 import '@splidejs/splide/dist/css/splide.min.css';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+import Image from "next/image";
 
 export default function HeroFeeder({ width = "100%", height = "100vh" }){
     const [isMobile,setIsMobile] = useState(false);
-//画面幅９００px以下でfeederを停止
-//_
-
 
     useEffect(() => {
         const checkWidth = () => {
@@ -22,13 +20,20 @@ export default function HeroFeeder({ width = "100%", height = "100vh" }){
         };
     }, []);
     const images = Array.from({ length: 10 }, (_, i) => `/top-${i + 1}.jpg`);
-    
+
     if (isMobile) {
         return (
             <div className={styles.mobileScrollContainer}>
-                  <div className={styles.mobileSlide}>
-                    <img className={styles.mobileImg} src="top_sp.jpg" alt="top_SP用画像"/>
-                    </div>
+                <div className={styles.mobileSlide}>
+                    <Image
+                        className={styles.mobileImg}
+                        src="top_sp.jpg"
+                        alt="top_SP用画像"
+                        fill
+                        width={400}
+                        height={300}
+                    />
+                </div>
             </div>
         )    
 }
@@ -51,70 +56,16 @@ export default function HeroFeeder({ width = "100%", height = "100vh" }){
         >
 {images.map((src, index) => (
             <SplideSlide key={index}>
-                <img className={styles.splideImg} src={src} alt={`slide-${index}`} />
+                <Image
+                   className={styles.splideImg}
+                   src={src}
+                   alt={`slide-${index}`}
+                   width={400}
+                   height={300}
+                />
             </SplideSlide>
         ))}
         </Splide>
-        {/* <SplideSlide>
-            <img className={styles.splideImg}
-            src="/top-1.jpg"
-            alt=""
-                />
-        </SplideSlide>
-        <SplideSlide>
-            <img className={styles.splideImg}
-            src="/top-2.jpg"
-            alt=""
-            />
-        </SplideSlide>
-        <SplideSlide>
-            <img className={styles.splideImg}
-            src="/top-3.jpg"
-            alt=""
-            />
-        </SplideSlide>
-        <SplideSlide>
-            <img className={styles.splideImg}
-            src="/top-4.jpg"
-            alt=""
-            />
-        </SplideSlide>
-        <SplideSlide>
-            <img className={styles.splideImg}
-            src="/top-5.jpg"
-            alt=""
-            />
-        </SplideSlide>
-        <SplideSlide>
-            <img className={styles.splideImg}
-            src="/top-6.jpg"
-            alt=""
-            />
-        </SplideSlide>
-        <SplideSlide>
-            <img className={styles.splideImg}
-            src="/top-7.jpg"
-            alt=""
-            />
-        </SplideSlide>
-        <SplideSlide>
-            <img className={styles.splideImg}
-            src="/top-8.jpg"
-            alt=""
-            />
-        </SplideSlide>
-        <SplideSlide>
-            <img className={styles.splideImg}
-            src="/top-9.jpg"
-            alt=""
-            />
-        </SplideSlide>
-        <SplideSlide>
-            <img className={styles.splideImg}
-            src="/top-10.jpg"
-            alt=""
-            />
-        </SplideSlide> */}
         </>
     )
 }
