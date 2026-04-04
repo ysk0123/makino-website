@@ -3,6 +3,8 @@
 }
 
 .header {
+    display: flex;
+    align-items: center;
     position: fixed;
     padding: 0 5%;
     top: 0;
