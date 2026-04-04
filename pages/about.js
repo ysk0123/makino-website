@@ -75,88 +75,92 @@ export default function About() {
                 <p>and art that makes people happy.</p>
               </div>
               <dl>
-              <h3>[Exhibition]</h3>
-              <div>
+              <h2 className={styles.title}>Exhibition</h2>
+              <div className={styles.record}>
+                <dt className={styles.dt}>2025.09.29</dt>
+                <dd>EXPO 2025 大阪・関西万博 Shin-Onna Exhibition</dd>
+              </div>
+              <div className={styles.record}>
                 <dt className={styles.dt}>2025.01.14~20</dt>
                 <dd>シタディーンなんば大阪「Woman is in the flowers -女は花に宿る- 個展」</dd>
               </div>
-              <div>
+              <div className={styles.record}>
                 <dt className={styles.dt}>2023.01.18~24</dt>
                 <dd className={styles.aboutDescText}>高槻阪急「今推しアーティストによるtriple（トリプル）個展Week103」</dd>
               </div>
-              <div>
+              <div className={styles.record}>
                 <dt className={styles.dt}>2022.12.21~27</dt>
                 <dd className={styles.aboutDescText}>「アトリエの冬時間」ONE-L flowerとのコラボ展阪急うめだ本店10階セッセギャラリー</dd>
               </div>
-              <div>
-                <dt className={styles.dt}>2022.07.07~07.16</dt>
+              <div className={styles.record}>
+                <dt className={styles.dt}>2022.07.07~16</dt>
                 <dd className={styles.aboutDescText}>GalleryIYN/ Creation Cafe IYN「Beautiful」企画展</dd>
               </div>
-              <div>
+              <div className={styles.record}>
                 <dt className={styles.dt}>2022.03.30~04.03</dt>
                 <dd className={styles.aboutDescText}>高槻阪急「人気アーティストによるtriple（トリプル）個展」</dd>
               </div>
-              <div>
+              <div className={styles.record}>
                 <dt className={styles.dt}>2021.12.10~12</dt>
                 <dd className={styles.aboutDescText}>平和芸術展 ギャラリーくぼた本館</dd>
               </div>
-              <div>
+              <div className={styles.record}>
                 <dt className={styles.dt}>2021.12.08〜20</dt>
                 <dd className={styles.aboutDescText}>アパレルショップポスター展示 神戸阪急</dd>
               </div>
-              <div>
+              <div className={styles.record}>
                 <dt className={styles.dt}>2021.11.26~12.26</dt>
                 <dd className={styles.aboutDescText}>kahogosoap POPUPストア 東急ハンズ梅田店</dd>
               </div>
-              <div>
+              <div className={styles.record}>
                 <dt className={styles.dt}>2021.11.20~22</dt>
                 <dd className={styles.aboutDescText}>IYN Art Festival in 神戸阪急</dd>
               </div>
-              <div>
+              <div className={styles.record}>
                 <dt className={styles.dt}>2021.10</dt>
                 <dd className={styles.aboutDescText}>UNKNOWN ASIA 2021 FM802DJ <span>大抜卓人賞受賞</span></dd>
               </div>
-              <div>
+              <div className={styles.record}>
                 <dt className={styles.dt}>2021.9</dt>
                 <dd className={styles.aboutDescText}>展示会「雅〜白鶴が似合うあの人」 Gallery IYN<span>白鶴優秀賞受賞</span></dd>
               </div>
-              <div>
+              <div className={styles.record}>
                 <dt className={styles.dt}>2021.4</dt>
                 <dd className={styles.aboutDescText}>展示会「第3回文房堂アワード」文房堂ギャラリー<span>企業協賛賞「大額賞」受賞</span></dd>
               </div>
-              <div>
+              <div className={styles.record}>
+                <dt className={styles.dt}>2021.2</dt>
                 <dd className={styles.aboutDescText}>わたしとやさいとことば展</dd>
-                <dt className={styles.dt}>2021.2</dt>
               </div>
-              <div>
+              <div className={styles.record}>
+                <dt className={styles.dt}>2021.2</dt>
                 <dd className={styles.aboutDescText}>展示会「SELECTED ILLUSTRATION BOYS」文房堂ギャラリー</dd>
-                <dt className={styles.dt}>2021.2</dt>
               </div>
-              <div>
+              <div className={styles.record}>
                 <dt className={styles.dt}>2020</dt>
                 <dd className={styles.aboutDescText}>UNKNOWN ASIA ONLINE 2020<span>株式会社シュガー 上嶋和巳賞受賞</span></dd>
               </div>
-              <div>
+              <div className={styles.record}>
                 <dt className={styles.dt}>2021</dt>
                 <dd className={styles.aboutDescText}>個展「I Am A Woman」Gallery SPOON</dd>
               </div>
-              <div>
+              <div className={styles.record}>
                 <dt className={styles.dt}>2011</dt>
                 <dd className={styles.aboutDescText}>グループ展 "KISS"Gallery SPOON</dd>
               </div>
-              <div>
+              <div className={styles.record}>
                 <dt className={styles.dt}>2011</dt>
                 <dd className={styles.aboutDescText}>個展「FALL IN LOVE」大阪玉造MAGATAMA cafe x dining</dd>
               </div>
-              <div>
+              <div className={styles.record}>
                 <dt className={styles.dt}>2011</dt>
                 <dd className={styles.aboutDescText}>グループ展「EpicureaRythm」大阪玉造MAGATAMA cafe x dining</dd>
               </div>
-              <div>
+              <div className={styles.record}>
                 <dt className={styles.dt}>2011</dt>
                 <dd className={styles.aboutDescText}>グループ展「3rd 100 Artist Show theme”RED”」Ouchi Gallery(NY)</dd>
               </div>
-              <div>
+              <div className={styles.record}>
                 <dt className={styles.dt}>2006</dt>
                 <dd className={styles.aboutDescText}>「御堂筋パレード」肖像画パフォーマンス</dd>
               </div>

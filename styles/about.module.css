@@ -1,6 +1,10 @@
-.title{
-    margin-top: 150px;
-
+.record{
+    display: flex;
+    gap: 20px;
+    height: 40px;
+}
+.dt{
+    width: 15%;
 }
 
 .aboutBg {
@@ -39,6 +43,7 @@
 }
 .title{
     font-size:2.5em;
+    margin-top: 150px;
 }
 
 /* 個別ページのstyle */
