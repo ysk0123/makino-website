@@ -2,16 +2,15 @@ import '../styles/globals.css'
 import { Noto_Sans_JP, Manrope } from "next/font/google";
 import Layout from '../components/layout'
 
-//Google Font　設定
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
-  variable: "--font-noto-sans-jp",
+  weight: ["100", "300"],
+  variable: "--font-jp",
 });
 const manrope = Manrope({
   subsets: ["latin"],
-  weight: ["200", "400", "500", "600", "700"],
-  variable: "--font-manrope",
+  weight: ["200", "400"],
+  variable: "--font-en",
 });
 
 // Font Awesomeの設定

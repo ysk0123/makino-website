@@ -3,114 +3,125 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/splide/dist/css/splide.min.css";
 import Image from "next/image";
+import SectionHeader from "./SectionHeader";
 
 export default function HomeSplide({ height = "400px" }) {
   return (
-    <>
-      <div
-        className={styles.splideWrapper}
-        style={{ "--splide-height": height }}
-      >
-      <div className={styles.textContants}>
-        <h2 className={styles.splideTitle}>Gallery</h2>
-        <a href="/gallery" className={styles.link}>
-          View More
-        </a>
+    <section className="py-24">
+      {/* タイトル（制限あり） */}
+      <div className="px-6 md:px-12 max-w-5xl mx-auto">
+        <SectionHeader
+          title="Gallery"
+          link="/gallery"
+          className="mb-12 border-b pb-4"
+        />
       </div>
 
-        <a href="/gallery" className={styles.viewMoreLink}>
-          <Splide
-            style={{ height: height }}
-            options ={{
-              type: "loop",
-              perPage: 4,
-              perMove: 1,
-              pagination: false,
-              arrows: false,
-              autoScroll: {
-                speed: 1.2,
-                pauseOnHover: false,
-                pauseOnFocus: false,
-                autoStart: true,
-              },
-              breakpoints: {
-                900: {
-                  destroy: true,
-                },
-              },
-            }}
-            extensions={{ AutoScroll }}
-            aria-label="Auto Scroll Splide Example"
-          >
-            <SplideSlide>
+      {/* スライド（フル幅） */}
+      <div
+        className={`w-full mt-12 ${styles.splideWrapper}`}
+      >
+        <Splide
+          options={{
+            type: "loop",
+            perPage: 4,
+            gap: "1rem",
+            pagination: false,
+            arrows: false,
+            autoScroll: {
+              speed: 0.5, // 少し落とす
+              pauseOnHover: false,
+              pauseOnFocus: false,
+              autoStart: true,
+            },
+            breakpoints: {
+              1024: { perPage: 3 },
+              768: { perPage: 2 },
+              480: { perPage: 1 },
+            },
+          }}
+          extensions={{ AutoScroll }}
+        >
+          <SplideSlide>
+            <div className="w-full h-[300px] md:h-[400px] lg:h-[500px] relative overflow-hidden group">
               <Image
-                className={styles.splideImg}
                 src="/blueflower.jpg"
                 alt="青い花の写真"
-                width={400}
-                height={300}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                className="object-cover transition duration-500 group-hover:scale-105 will-change-transform"
                 priority
               />
-            </SplideSlide>
-            <SplideSlide>
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+             <div className="w-full h-[300px] md:h-[400px] lg:h-[500px] relative overflow-hidden group">
               <Image
-                className={styles.splideImg}
                 src="/colordropsdress.jpg"
                 alt="カラフルなドレス写真"
-                width={400}
-                height={300}
-
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                className="object-cover transition duration-500 group-hover:scale-105 will-change-transform"
               />
-            </SplideSlide>
-            <SplideSlide>
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+             <div className="w-full h-[300px] md:h-[400px] lg:h-[500px] relative overflow-hidden group">
               <Image
-                className={styles.splideImg}
                 src="/colorfullife.jpg"
                 alt="カラフルな生活写真"
-                width={400}
-                height={300}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                className="object-cover transition duration-500 group-hover:scale-105 will-change-transform"
               />
-            </SplideSlide>
-
-            <SplideSlide>
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+             <div className="w-full h-[300px] md:h-[400px] lg:h-[500px] relative overflow-hidden group">
               <Image
-                className={styles.splideImg}
                 src="/flowerhair01.jpg"
                 alt="花の髪飾り写真"
-                width={400}
-                height={300}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                className="object-cover transition duration-500 group-hover:scale-105 will-change-transform"
               />
-            </SplideSlide>
-            <SplideSlide>
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+             <div className="w-full h-[300px] md:h-[400px] lg:h-[500px] relative overflow-hidden group">
               <Image
-                className={styles.splideImg}
                 src="/music.jpg"
                 alt="音楽の写真"
-                width={400}
-                height={300}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                className="object-cover transition duration-500 group-hover:scale-105 will-change-transform"
               />
-            </SplideSlide>
-            <SplideSlide>
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+             <div className="w-full h-[300px] md:h-[400px] lg:h-[500px] relative overflow-hidden group">
               <Image
-                className={styles.splideImg}
                 src="/drops01.jpg"
                 alt="水滴の写真"
-                width={400}
-                height={300}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                className="object-cover transition duration-500 group-hover:scale-105 will-change-transform"
               />
-            </SplideSlide>
-            <SplideSlide>
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+             <div className="w-full h-[300px] md:h-[400px] lg:h-[500px] relative overflow-hidden group">
               <Image
-                className={styles.splideImg}
                 src="/yellowgirl.jpg"
                 alt="黄色い服の女性写真"
-                width={400}
-                height={300}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                className="object-cover transition duration-500 group-hover:scale-105 will-change-transform"
               />
-            </SplideSlide>
-          </Splide>
-        </a>
+            </div>
+          </SplideSlide>
+        </Splide>
       </div>
-    </>
+    </section>
   );
 }

@@ -1,11 +1,11 @@
-import styles from "../styles/home-about.module.css";
+import SectionHeader from "./SectionHeader";
+
 export default function About() {
   return (
-      <div className={styles.contentAria}>
-        <div className={styles.textContents}>
-        <h2 className={styles.title}>About</h2>
-          <a  href="/about" className={styles.link}>view more</a>
-        </div>
+      <div className="py-20 min-h-[400px] bg-[url('/images/dahlia02.jpg')] bg-cover bg-top">
+        <div className="px-6 md:px-12 py-70 max-w-5xl mx-auto">
+        <SectionHeader title="About" link="/about" className="my-96" />
       </div>
+    </div>
   );
 }

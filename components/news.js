@@ -1,45 +1,38 @@
-import { Noto_Sans_JP, Manrope } from "next/font/google";
-import styles from "../styles/news.module.css";
 import Link from "next/link";
+import SectionHeader from "./SectionHeader";
 
-const notoSansJP = Noto_Sans_JP({
-  subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
-  variable: "--font-noto-sans-jp",
-});
-const manrope = Manrope({
-  subsets: ["latin"],
-  weight: ["200", "400", "500", "600", "700"],
-  variable: "--font-manrope",
-});
-
-//　要リファクタリング
 export default function News({ posts = [] }) {
   return (
-    <>
-      <h2 className={styles.title}>News</h2>
-      <div className={styles.newsContainer}>
+    <section className="py-24 px-6 md:px-12 my-24 max-w-5xl mx-auto">
+
+      {/* セクションタイトル */}
+      <SectionHeader
+        title="News"
+        link="/blog"
+        className="mb-12 border-b pb-4"
+      />
+      {/* 記事一覧 */}
+      <div className="space-y-6">
         {posts.slice(0, 4).map(({ title, slug, publishDate }) => (
-          <dl className={styles.posts} key={slug}>
-            <dt className={styles.date}>{publishDate.slice(0, 10)}</dt>
-            <dd
-              className={`${notoSansJP.className} ${manrope.className} ${styles.blog_title}`}
-              style={{ fontWeight: 100 }}
+          <div
+            key={slug}
+            className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 border-b pb-4 group"
+          >
+            {/* 日付 */}
+            <p className="text-sm text-gray-400 font-en min-w-[100px]">
+              {publishDate.slice(0, 10)}
+            </p>
+
+            {/* タイトル */}
+            <Link
+              href={`/blog/${slug}`}
+              className="font-en font-light transition duration-300 group-hover:opacity-60"
             >
-              <Link href={`/blog/${slug}`}>{title}</Link>
-            </dd>
-          </dl>
+              {title}
+            </Link>
+          </div>
         ))}
       </div>
-      <div style={{ margin: "2em 0" }}
-           className={styles.link}>
-        <a
-              href="/blog"
-         className={`${notoSansJP.className} ${manrope.className}`}
-        >
-          view more
-        </a>
-      </div>
-    </>
+    </section>
   );
 }
