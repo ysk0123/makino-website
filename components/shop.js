@@ -2,7 +2,7 @@ import SectionHeader from "./SectionHeader";
 
 export default function Shop() {
     return (
-      <section className="relative py-20 min-h-[800px] px-6 bg-[url('/images/shop.jpg')] bg-cover bg-[position:center_60%] md:px-12 my-24 max-w-5xl mx-auto">
+      <section className="relative py-20 min-h-[800px] px-6 bg-[url('/images/shop.jpg')] bg-cover bg-[position:center_60%] md:px-12 my-2 max-w-5xl mx-auto">
   
   <div className="absolute inset-0 bg-black/30" />
 

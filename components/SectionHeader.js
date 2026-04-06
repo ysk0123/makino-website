@@ -9,10 +9,9 @@ export default function SectionHeader({
 }) {
   return (
     <div className={`flex items-center justify-between ${className}`}>
-
       {/* タイトル */}
       <motion.h2
-          initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.4 }}
         viewport={{ once: true }}

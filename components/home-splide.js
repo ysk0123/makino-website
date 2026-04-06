@@ -7,19 +7,19 @@ import SectionHeader from "./SectionHeader";
 
 export default function HomeSplide({ height = "400px" }) {
   return (
-    <section className="py-24">
+    <section className="py-6 md:py-6 my-6">
       {/* タイトル（制限あり） */}
       <div className="px-6 md:px-12 max-w-5xl mx-auto">
         <SectionHeader
           title="Gallery"
           link="/gallery"
-          className="mb-12 border-b pb-4"
+          className="mb-4 border-b pb-4"
         />
       </div>
 
       {/* スライド（フル幅） */}
       <div
-        className={`w-full mt-12 ${styles.splideWrapper}`}
+          className={`w-full mt-12 ${styles.splideWrapper}`}
       >
         <Splide
           options={{
