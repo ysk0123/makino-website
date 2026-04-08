@@ -31,8 +31,6 @@ export default function Nav() {
           @media screen and (max-width: 900px) {
             body {
               overflow: hidden;
-              position: fixed;
-              width: 100%;
             }
           }
         `}</style>
@@ -40,25 +38,38 @@ export default function Nav() {
       <button className={styles.btn} onClick={toggleNav}>
         <span className={styles.bar}></span>
       </button>
-      <ul
-        className={`${notoSansJP.className} ${manrope.className} ${styles.list}`}
+      <ul className={`${manrope.className} ${styles.list} space-y-6 md:space-y-0 md:space-x-8`}>
+  {[
+    { name: "Top", href: "/" },
+    { name: "News", href: "/blog" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "About", href: "/about" },
+  ].map((item) => (
+    <li key={item.name} className="relative group">
+      <Link
+        href={item.href}
+        onClick={closeNav}
+        className="transition duration-300 group-hover:text-gray-400"
       >
-        <li>
-          <Link href="/" onClick={closeNav}>Top</Link>
-        </li>
-        <li>
-          <Link href="/blog" onClick={closeNav}>News</Link>
-        </li>
-        <li>
-          <Link href="/gallery" onClick={closeNav}>Gallery</Link>
-        </li>
-        <li>
-          <Link href="https://makinoart.theshop.jp/" onClick={closeNav}>Shop</Link>
-        </li>
-        <li>
-          <Link href="/about" onClick={closeNav}>About</Link>
-        </li>
-      </ul>
+        {item.name}
+      </Link>
+      <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full"></span>
+    </li>
+  ))}
+
+  <li className="relative group">
+    <a
+      href="https://makinoart.theshop.jp/"
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={closeNav}
+      className="transition duration-300 group-hover:text-gray-400"
+    >
+      Shop
+    </a>
+    <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full"></span>
+  </li>
+</ul>
     </nav>
   );
 }
