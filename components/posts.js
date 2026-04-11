@@ -1,6 +1,7 @@
-export default function Posts({ posts }) {
-  console.log((posts)
+import styles from "./posts.module.css";
+import Link from "next/link";
 
+export default function Posts({ posts }) {
   return (
     <div className={styles.gridContainer}>
       {posts
@@ -11,12 +12,12 @@ export default function Posts({ posts }) {
               <span className={styles.publishDate}>
                 {publishDate ? publishDate.slice(0, 10) : ""}
               </span>
-              <h2 className={`${notoSansJP.className} ${manrope.className} ${styles.title}`}>
+              <h2 className={styles.title}>
                 {title}
               </h2>
             </Link>
           </article>
         ))}
     </div>
-  )
+  );
 }
